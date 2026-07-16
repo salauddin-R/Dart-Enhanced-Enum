@@ -1,7 +1,9 @@
+import 'dart:io';
+
 enum UserRole {
-  admin("Admin", 1),
-  manager("Manager", 2),
-  customer("customer", 3);
+  admin("admin", 1),
+  maneger("maneger", 2),
+  customer("Customer", 3);
 
   final String title;
   final int level;
@@ -10,6 +12,7 @@ enum UserRole {
 }
 
 void main() {
-  print(UserRole.admin.title);
   print(UserRole.admin.level);
+  print(UserRole.values);
+  print(UserRole.customer.title);
 }
